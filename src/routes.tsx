@@ -30,9 +30,9 @@ import HouseInsure from './pages/Property/routes/HouseInsure/HouseInsure';
 import { RegistrationForm } from './pages/Home/routes/Registration';
 
 export const routes: RouteObject[] = [
-    { path: '/', element: <Navigate to="/test" /> },
-    // { path: '/', element: <Navigate to="/home" /> },
-    { path: '/test', element: <TestPage />},
+    // { path: '/', element: <Navigate to="/test" /> },
+    { path: '/', element: <Navigate to="/home" /> },
+    { path: '/test', element: <TestPage /> },
     {
         path: '/home',
         element: <Home />,
