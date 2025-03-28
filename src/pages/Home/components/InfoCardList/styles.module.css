@@ -1,0 +1,39 @@
+.infoCardListBasic {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    padding: 113px 24px;
+    /* ширина по макету + 2 падинга */
+    max-width: calc(1218px + 48px);
+}
+
+.cardListWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    width: 100%;
+    gap: 30px;    
+}
+
+@media screen and (max-width: 1270px) {
+    .infoCardListBasic {
+        padding: 65px 24px 80px;
+    } 
+
+   .cardListWrapper {
+        gap: 24px
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .infoCardListBasic {
+        padding: 40px 16px 56px;
+    }
+    .cardListWrapper{
+        flex-direction: column;
+    }
+}

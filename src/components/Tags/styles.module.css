@@ -1,0 +1,64 @@
+.tagLink {
+    height: 46px;
+    padding: 8px 0 16px;
+    display: flex;
+}
+
+.tagActiveLink {
+    border-bottom: 1px solid #22C062;
+}
+
+.disabled {
+    color: #D7DDDA;
+}
+
+.count {
+    animation: bounceCount .7s ease-in-out 1.5s 1 normal forwards running;
+}
+
+.tagActiveLink .count {
+    display: none;
+}
+
+.count {
+    transition: display ;
+    position: relative;
+    margin-left: 12px;
+    gap: 1px;
+}
+
+.count:before {
+    content: '+';
+    font-size: 14px;
+    font-family: Roboto Flex, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    display: inline-block;
+    vertical-align: middle;
+    color: #FCFFFE;
+}
+
+@keyframes bounceCount {
+    0% {
+        top: 0;
+    }
+    10% {
+        top: 3px;
+    }
+    30% {
+        top: -8px;
+    }
+    50% {
+        top: 2px;
+    }
+    70% {
+        top: -5px;
+    }
+    90% {
+        top: 1px;
+    }
+    100% {
+        top: 0;
+    }
+}

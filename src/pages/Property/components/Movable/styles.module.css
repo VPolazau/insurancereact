@@ -1,0 +1,39 @@
+.cardInsurance {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: visible;
+}
+
+.movableHeaderBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.helperImg:hover {
+    filter: invert(54%) sepia(68%) saturate(522%) hue-rotate(92deg) brightness(99%) contrast(87%);
+}
+
+.helperImgWrapper {
+    position: relative;
+}
+
+.helperImgWrapper:hover::after {
+    content: 'Мебель, бытовая техника'; /* attr(data-title); */
+    position: absolute;
+    top: 30px;
+    left: 10px; 
+    width: 200px;
+    padding: 10px 12px;
+    background: #FCFFFE;
+    border-radius: 8px;
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    color: #1F1D1D;
+    z-index: 100;
+}

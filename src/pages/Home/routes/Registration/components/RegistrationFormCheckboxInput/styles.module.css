@@ -1,0 +1,27 @@
+.itemsContainer {
+  display: flex;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkboxLink {
+  color: #22C062;
+}
+
+.customCheck {
+  margin: 5px 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #22C062;
+  flex-shrink: 0;
+}
+
+.checkbox:checked + .itemsContainer .customCheck {
+  background-color: #22C062;
+}

@@ -1,0 +1,34 @@
+.card {
+    margin: 0 auto;
+    width: 1081px;
+    margin-bottom: 24px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.block {
+    display: flex;
+    gap: 16px;
+}
+
+.lastName, .firstName,
+.middleName, .birthday {
+    width: 100%;
+}
+
+.contacts {
+    display: flex;
+}
+
+.btnContainer {
+    margin: 0 auto;
+    width: 1081px;
+}
+
+.btnSave {
+    margin-left: auto;
+}

@@ -1,0 +1,7 @@
+.link {
+  padding-bottom: 4px;
+}
+
+.link:hover {
+    color: rgb(34, 192, 98);
+}

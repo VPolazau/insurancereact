@@ -1,0 +1,8 @@
+.deleteBtn {
+  cursor: pointer;
+  stroke: #D7DDDA;
+}
+
+.deleteBtn:hover {
+  stroke: #000;
+}

@@ -1,0 +1,72 @@
+@media screen and (orientation: portrait) {
+    .rotate_message {
+        display: none;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .rotate_message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background: white;
+        border-radius: 10px;
+        box-shadow: rgba(87,0,5,0.77) 10px 10px 10px;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+}
+
+.buttonDesign {
+    width: 300px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.notification {
+    display: none;
+}
+
+.touchId_btn {
+    min-width: 0;
+    max-width: 0;
+    visibility: hidden;
+    margin-left: 0;
+    border: none;
+    padding: 0;
+    opacity: 0;
+    transition:
+            min-width 0.3s ease-in-out,
+            max-width 0.3s ease-in-out,
+            margin-left 0.3s ease-in-out,
+            opacity 0.3s ease-in-out;
+}
+
+.visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    visibility: visible;
+    border: 1px solid #22C062;;
+    opacity: 1;
+
+    height: 44px;
+    min-width: 54px;
+    max-width: 54px;
+    padding: 0;
+    margin: 20px 0px;
+
+    & img {
+        height: 42px;
+    }
+}

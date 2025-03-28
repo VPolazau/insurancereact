@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider slider 1v 1`] = `
+<div
+  class="slider"
+  data-testid="Slider"
+>
+  <div
+    class="sliderWrapper"
+    style="width: 200%; transform: translateX(calc(-0% + 0px));"
+  >
+    <div
+      class="slide"
+    >
+      <div
+        class="slideContainer"
+      >
+        <div
+          class="slideContent"
+        >
+          <div
+            class="text h1 slideTitle"
+            data-testid="sliderTitle"
+          >
+            Защитите свою квартиру от неожиданных ситуаций
+          </div>
+          <div
+            class="text h3 slideSubtitle"
+            data-testid="sliderSubtitle"
+          >
+            получите страховку не выходя из дома
+          </div>
+          <button
+            class="buttonDesign btn primary"
+            data-testid="button"
+          >
+            Оформить
+          </button>
+        </div>
+        <div
+          class="slideImage"
+        >
+          <img
+            alt=""
+            src="boy.svg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="slide"
+    >
+      <div
+        class="slideContainer"
+      >
+        <div
+          class="slideContent"
+        >
+          <div
+            class="text h1 slideTitle"
+            data-testid="sliderTitle"
+          >
+            Защитите свой автомобиль с нашей страховкой
+          </div>
+          <div
+            class="text h3 slideSubtitle"
+            data-testid="sliderSubtitle"
+          >
+            надежное покрытие от непредвиденных рисков!
+          </div>
+          <button
+            class="buttonDesign btn primary"
+            data-testid="button"
+          >
+            Оформить
+          </button>
+        </div>
+        <div
+          class="slideImage"
+        >
+          <img
+            alt=""
+            src="car.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="pagination"
+  >
+    <button
+      class="paginationDot active"
+      data-testid="sliderButton"
+    />
+    <button
+      class="paginationDot"
+      data-testid="sliderButton"
+    />
+  </div>
+</div>
+`;

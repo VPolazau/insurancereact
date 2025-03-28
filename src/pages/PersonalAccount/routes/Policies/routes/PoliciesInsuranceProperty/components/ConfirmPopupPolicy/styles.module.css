@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: calc(430px - 48px);
+}
+
+.blockText > .title:first-child {
+  margin-bottom: 16px;
+}
+
+.title {
+  text-align: center;
+}
+
+.buttonContainer {
+  align-self: end;
+  display: flex;
+  gap: 16px;
+}
+
+.confirmButton {
+  padding: 10px 30px;
+  width: 145px;
+}
+
+.cancelButton {
+  width: 219px;
+  text-align: end;
+}
+
+.cancelButton:hover > * ,
+.cancelButton:active > * {
+  color: #22C062;
+  cursor: pointer;
+}
+

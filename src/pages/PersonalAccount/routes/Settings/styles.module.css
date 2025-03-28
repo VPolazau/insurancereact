@@ -1,0 +1,20 @@
+.settingsLayout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  overflow: auto;
+}
+
+.settingsCard{
+  width: 1081px;
+  overflow: visible;
+}
+
+.settingsHeader {
+  border-radius: 8px 8px 0 0;
+}
+
+.passwordBtn:hover{
+  color: #22C062;
+}

@@ -1,0 +1,40 @@
+.statusIcon {
+    height: 24px;
+    width: 24px;
+    position: relative;
+}
+
+.statusIcon:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    max-height: 56px;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #FCFFFE;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+    font-family: Nunito Sans, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.errorTitle:hover::after {
+    color: #ED513B;
+}
+
+.warningTitle:hover::after {
+    color: #FF9C09;
+}
+
+.successTitle:hover::after {
+    color: #22C062;
+}

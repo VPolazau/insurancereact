@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.castle {
+    width: 82px;
+    height: 81px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.btns {
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.errors {
+    color: #ED513B;
+}
+
+.btnClose {
+    padding: 8px;
+}
+
+.btnClose:hover div {
+    color: #22C062;
+}
+
+.btnSave {
+    color: rgba(252, 255, 254, 1);
+}

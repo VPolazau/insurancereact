@@ -1,0 +1,43 @@
+.recoveryBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #22C062;
+  border-radius: 8px;
+  padding: 48px;
+  width: 594px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  margin: 0 auto;
+}
+
+.button {
+  padding: 10px 30px 12px 30px;
+  width: 100%;
+  height: 46px;
+}
+
+.modalLetter {
+  width: 490px;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.modalContent > img {
+  width: 80px;
+  height: 80px;
+}

@@ -1,0 +1,14 @@
+.wrapperInsurance {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 32px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+}
+
+.formInsurance {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

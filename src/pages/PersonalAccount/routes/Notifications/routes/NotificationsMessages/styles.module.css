@@ -1,0 +1,7 @@
+.messages {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1081px;
+  gap: 24px;
+}

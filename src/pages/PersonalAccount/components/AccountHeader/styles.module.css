@@ -1,0 +1,75 @@
+.accountHeader {
+    min-height: 76px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 36px;
+    position: relative;
+    background-color: #FCFFFE;
+    border-bottom:1px solid #E1F9EF;
+}
+
+.phone {
+    margin-right: 58px;
+}
+
+.wrapperNotification {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    margin-right: 76px;
+}
+
+.wrapperNotification:hover .iconBell {
+    color: #22C062;
+    transform-origin: 50% 0;
+    animation: lr 1.5s ease-in-out;
+}
+
+.iconBell {
+    color: #646464;
+
+}
+
+
+.name {
+    margin-right: 24px;
+}
+
+.iconBtnLogout {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 8px 10px;
+}
+
+.notificationBtn {
+    padding: 10px 30px;
+}
+
+
+@keyframes lr{
+    10%{
+        transform:rotate(15deg);
+    }
+    20%{
+        transform:rotate(-15deg);
+    }
+    30%{
+        transform:rotate(15deg);
+    }
+    50%{
+        transform:rotate(0deg);
+    }
+}

@@ -1,0 +1,36 @@
+.cookiePopupBasic {
+    position: fixed;
+    width: 1010px;
+    bottom: 5vh;
+    transition: width 0.3s;
+}
+
+.link {
+    color: rgba(34, 192, 98, 1);
+    text-decoration: none;
+}
+
+@media (max-width: 1150px) {
+  .cookiePopupBasic {
+    width: 720px;
+  }
+}
+
+@media (max-width: 760px) {
+  .cookiePopupBasic {
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 480px) {
+    .cookiePopupBasic {
+        width: calc(100% - 32px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descriptionCookie {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

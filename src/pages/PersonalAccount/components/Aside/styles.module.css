@@ -1,0 +1,114 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  min-width: 224px;
+  align-self: stretch;
+  z-index: 1;
+  background-color: #FCFFFE; 
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.logoIcon {
+  height: 46px;
+  width: 150px;
+}
+
+.asideLogo {
+  display: flex;
+  justify-content: flex-start;
+  margin: 16px 0 0 18px;
+}
+
+.asideNav {
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+}
+
+.asideNav:nth-of-type(2) {
+  margin-top: 32px;
+}
+
+.asideDivider {
+  width: 208px;
+  height: 1px;  
+  margin: 0 auto;
+  background: #E1F9EF;
+}
+
+.asideLink {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #646464;
+  transition: color 0.3s;
+  margin-bottom: 32px;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 4px;
+}
+
+.asideLink:hover > .asideIconStroke {
+  stroke: #1F1D1D;
+}
+
+.asideLink:hover > .asideIconColor {
+  color: #1F1D1D;
+}
+
+.asideLink:hover > .asideIconFill {
+  fill: #1F1D1D;
+}
+
+.asideLink:hover > .asideText {
+  color: #1F1D1D;
+}
+
+.asideLinkActive {
+  background-color: #22C062;
+}
+
+.asideLinkActive > .asideText {
+  color: #1F1D1D;
+}
+
+.asideLinkActive > .asideIconStroke {
+  stroke: #1F1D1D;
+}
+
+.asideLinkActive > .asideIconColor {
+  color: #1F1D1D;
+}
+
+.asideLinkActive > .asideIconFill {
+  fill: #1F1D1D;
+}
+
+.asideIconColor {
+  color: #646464;
+}
+
+.asideIconStroke {
+  stroke: #646464;
+}
+
+.asideIconFill {
+  fill: #646464;
+}
+
+.asideText {
+  flex-grow: 1;
+  color: #646464;
+}
+
+.asideNotification {
+  position: static;
+  flex-shrink: 0;  
+}
+
+.iconLogout {
+  fill: #646464;
+  padding: 2px;
+}

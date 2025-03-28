@@ -1,0 +1,39 @@
+
+.snow_block_wrapper {
+    height: 50vh;
+    width: 100vw;
+    background: cadetblue;
+}
+
+.snow_block {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    background-image:
+            url('snowFlakes/first.webp'),
+            url('snowFlakes/second.webp'),
+            url('snowFlakes/third.webp');
+    animation: snow 40s linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+        opacity: 0;
+    }
+    5% {
+        opacity: 0.6;
+    }
+    95% {
+        opacity: 0.6;
+    }
+    100% {
+        background-position: 1800px 2000px, 1600px 1600px, 1400px 1200px;
+        opacity: 0;
+    }
+}

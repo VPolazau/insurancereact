@@ -1,0 +1,29 @@
+.dropDownListBasic {
+    padding: 10px 0;
+}
+
+.mainLink {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropDownContent {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 14px;
+    gap: 8px;
+    box-sizing: content-box;
+}
+
+.dropDownText {
+    font-size: 17px;
+}
+
+.dropDownMainText {
+    display: flex;
+    gap: 8px;
+    color: #22C062;
+}

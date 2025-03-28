@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoCard InfoCard with mock data 1`] = `
+<div
+  class="infoCardBasic mockClassInfoCard"
+  data-testid="infoCard"
+>
+  <div
+    class="rectangle"
+  />
+  <h5>
+    Some mock text...
+  </h5>
+</div>
+`;

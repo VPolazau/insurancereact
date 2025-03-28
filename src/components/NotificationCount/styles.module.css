@@ -1,0 +1,14 @@
+.notificationCountBasic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+
+    position: absolute;
+    min-width: 28px;
+    min-height: 22px;
+
+    border-radius: 86px;
+    border: 1px solid #E1F9EF;
+    user-select: none;
+}

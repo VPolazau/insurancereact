@@ -1,0 +1,268 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sliderWrapper {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(85.86deg, #A9FFDB -4.93%, rgba(126, 155, 255, 0.27) 115.27%);
+  height: 500px;
+}
+
+.slide:nth-child(even) {  
+  background: linear-gradient(85.86deg, rgba(126, 155, 255, 0.27) -6.35%, #A9FFDB 115.27%);
+}
+
+.slideContainer {
+  margin: 132px auto;  
+  display: flex;
+  padding: 0 24px;
+  /* ширина по макету + 2 падинга */
+  max-width: calc(1218px + 48px);
+  width: 100%;
+  position: relative;
+}
+
+.slideContent {
+  flex: 0 0 56%;
+  width: 100%;
+  z-index: 1;
+}
+
+.slideImage {
+  position: absolute;
+  right: 109px;
+  bottom: -132px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Стили для картинки второго слайда */
+.slide:nth-child(2) .slideImage {
+  right: 24px;
+}
+
+.slideTitle {
+  margin-bottom: 22px;  
+  pointer-events: none;
+  user-select: none;
+}
+
+.slideSubtitle {
+  margin-bottom: 40px;  
+  pointer-events: none;
+  user-select: none;
+}
+
+.pagination {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  gap: 20px;
+}
+
+.paginationDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;   
+  border: 1px solid #22C062;
+}
+
+.active {
+  background-color: #22C062;
+}
+
+@media (max-width: 1150px) {
+  .slide {
+    height: 376px;
+  }
+
+  .slideContainer {
+    margin: 64px auto;
+  }
+
+  .slideTitle {
+    margin-bottom: 15px;  
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .slideSubtitle {
+    min-height: 52px;
+    margin-bottom: 21px; 
+  }
+
+  .slideImage {
+    right: 66px;
+    bottom: -71px;
+  }
+
+  .slideImage > img {
+    max-width: 85%;
+  }
+  
+  .slide:nth-child(2) .slideImage {
+    right: -101px;
+    bottom: -28px;
+  }
+  
+  .slide:nth-child(2) .slideImage > img {
+    max-width: 78%;
+  }
+}
+
+@media (max-width: 965px)  {
+  .slideContent {
+    min-width: 454px;
+  }
+
+  .slideSubtitle {
+    margin-bottom: 37px;
+  }
+
+  .slideImage {
+    right: -48px;
+    bottom: -63px;
+  }
+
+  .slideImage > img {
+    max-width: 77%;
+  }
+  
+  .slide:nth-child(2) .slideImage {
+    right: -215px;
+    bottom: -1px;
+  }
+  
+  .slide:nth-child(2) .slideImage > img {
+    max-width: 59%;
+  }
+}
+
+@media (max-width: 710px) {
+  .slide {
+    height: 660px;
+    gap: 18px;
+  }
+
+  .slideContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0;
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .slideContent {
+    flex-basis: 40%;
+    width: 100%;
+    min-width: 0;
+    height: 202px;
+  }
+
+  .slideTitle {
+    font-size: 32px;
+    line-height: 130%;
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+
+  .slideSubtitle {
+    font-size: 20px;
+    line-height: 130%;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+
+  .slideImage {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .slide:nth-child(1) .slideImage {
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 7% 0;
+    left: 27%;
+    width: 76%;
+  }
+
+  .slide:nth-child(2) .slideImage {
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 10% 0;
+    left: 50px;
+    width: 134%;
+  }
+
+  .pagination {
+    gap: 8px;
+  }
+
+  .paginationDot{
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 570px) {
+  .slide:nth-child(1) .slideImage {
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 10% 0;
+    left: 23%;
+    width: 76%;
+  }
+
+  .slide:nth-child(2) .slideImage {
+    padding: 0 0 15% 0;
+    left: 17px;
+    width: 154%;
+  }
+}
+
+@media (max-width: 360px) {
+  .slideContent {
+    height: 214px;
+  }
+
+  .slideTitle {
+    font-size: 26px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .slideSubtitle {
+    font-size: 17px;
+  }
+
+  .slide {
+    height: 562px;
+    gap: 10px;
+  }
+
+  .buttonDesign {
+    width: 100%;
+    justify-content: center;
+  }
+}

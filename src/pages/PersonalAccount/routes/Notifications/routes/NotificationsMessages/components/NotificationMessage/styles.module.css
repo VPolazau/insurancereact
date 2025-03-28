@@ -1,0 +1,42 @@
+.text {
+  max-width: 660px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  padding: 24px 24px 32px 24px;
+}
+
+.messageHeader {
+  display: flex;
+  height: 24px;
+  justify-content: space-between;
+}
+
+.readBtn {
+  position: absolute;
+  right: 30px;
+  bottom: 26px;
+}
+
+.btnMore {
+  align-self: self-start;
+}
+
+.btnText {
+  color: #646464;
+}
+
+.btn {
+  color: #D7DDDA;
+}
+
+.btn:hover, .btnText:hover {
+  color: #22C062;
+}

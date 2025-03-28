@@ -1,0 +1,10 @@
+.totalBlockWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.applyButton {
+    width: 203px;
+    color: #FCFFFE;
+}

@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logo {
+  height: 46px;
+  width: 150px;
+}
+
+.logoButton {
+  line-height: 0;
+}
+
+.container {
+  margin: 16px auto 15px;
+  padding: 0 24px;
+  /* ширина по макету + 2 падинга */
+  max-width: calc(1218px + 48px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.buttons {
+  display: flex;
+  gap: 27px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #E1F9EF;
+}
+
+.iconButtons {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .container {
+    margin: 16px;
+    padding: 0;
+    max-width: calc(100% - 32px);
+  }
+
+  .phoneNumber{
+    display: none;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .iconButtons {
+    display: flex;
+    gap: 12px;
+  }
+}

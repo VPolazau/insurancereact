@@ -1,0 +1,45 @@
+.content {
+    height: calc(100% - 76px);
+    display: flex;
+    flex-direction: column;
+}
+
+.iconArrow {
+    height: 14px;
+    width: 8px;
+}
+
+.header {
+    padding: 24px 32px 0;
+    background: #FCFFFE;
+}
+
+.btnBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FCFFFE;
+    padding: 8px 12px 8px 10px;
+    border: 1px solid #22C062;
+    border-radius: 4px;
+    margin-top: 14px;
+}
+
+.btnBack:hover {
+    background: #E6FEEF;
+}
+
+.body {
+    height: 100vh;
+    background-color: #ECEEED;
+    padding: 32px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.tagsList {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 12px;
+}

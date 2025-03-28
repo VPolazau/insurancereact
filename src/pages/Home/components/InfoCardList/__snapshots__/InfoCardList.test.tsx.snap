@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoCardList InfoCardList with mock className 1`] = `
+<div
+  class="infoCardListBasic mockClassInfoCardList"
+  data-testid="infoCardList"
+>
+  <div
+    class="text h2"
+    data-testid="typographyComponent"
+  >
+    Наши преимущества
+  </div>
+  <div
+    class="cardListWrapper"
+  >
+    <div
+      class="infoCardBasic"
+      data-testid="infoCard"
+    >
+      <div
+        class="rectangle"
+      />
+      <div
+        class="text h3"
+        data-testid="typographyComponent"
+      >
+        Широкий спектр услуг
+      </div>
+      <div
+        class="text medium"
+        data-testid="typographyComponent"
+      >
+        Мы заботимся о Вашей безопасности
+      </div>
+    </div>
+    <div
+      class="infoCardBasic"
+      data-testid="infoCard"
+    >
+      <div
+        class="rectangle"
+      />
+      <div
+        class="text h3"
+        data-testid="typographyComponent"
+      >
+        Чат поддержки
+      </div>
+      <div
+        class="text medium"
+        data-testid="typographyComponent"
+      >
+        Получайте быстро и удобно ответы на вопросы
+      </div>
+    </div>
+    <div
+      class="infoCardBasic"
+      data-testid="infoCard"
+    >
+      <div
+        class="rectangle"
+      />
+      <div
+        class="text h3"
+        data-testid="typographyComponent"
+      >
+        Личный кабинет
+      </div>
+      <div
+        class="text medium"
+        data-testid="typographyComponent"
+      >
+        Управляйте своей страховкой легко и удобно
+      </div>
+    </div>
+    <div
+      class="infoCardBasic"
+      data-testid="infoCard"
+    >
+      <div
+        class="rectangle"
+      />
+      <div
+        class="text h3"
+        data-testid="typographyComponent"
+      >
+        Выгодное предложение
+      </div>
+      <div
+        class="text medium"
+        data-testid="typographyComponent"
+      >
+        Страховая сумма больше, а взнос меньше
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,32 @@
+.titleDescription {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E1F9EF;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.descriptionBlock {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid rgba(31, 171, 112, 0.2);
+  border-radius: 6px;
+}
+
+.descriptionList {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding-left: 20px;
+}
+
+.descriptionList li {
+  list-style-type: disc;
+  color: #22C062;
+}

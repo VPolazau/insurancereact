@@ -1,0 +1,53 @@
+.content {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.userButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.userButton:hover *,
+.userButton:active *,
+.active * {
+    color:#22C062;
+}
+
+.userName {
+    max-width: 90px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.arrow {
+    max-width: 16px;
+    max-height: 16px;
+}
+
+.dropMenuList {
+    position: absolute;
+    right: 0;
+    top: 42px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 8px;
+    background-color:#FCFFFE;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.10);
+    z-index: 1;
+}
+
+.dropMenuList *:hover,
+.dropMenuList *:active {
+    color: #22C062;
+}

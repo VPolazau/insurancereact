@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  width: 116px;
+  padding: 8px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.statusText {
+  color: #1F1D1D;
+}

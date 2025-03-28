@@ -1,0 +1,30 @@
+.form {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 906px;
+	display: grid;
+}
+
+.twoColumn {
+	grid-column: span 2;
+}
+
+.inputCalendar {
+	position: relative;
+}
+
+.calendar {
+	position: absolute;
+	top: 90px;
+	right: 0;
+}
+
+.checkbox {
+	margin-bottom: 32px;
+}
+
+.buttonWrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 112px;
+}

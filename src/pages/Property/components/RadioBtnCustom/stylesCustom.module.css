@@ -1,0 +1,29 @@
+.input {
+   display: none;
+}
+
+.label {
+    position: relative;
+    padding-left: 70px;
+    padding-top: 42px;
+}
+
+
+.span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 79px;
+    height: 42px;
+    border: 1px solid #D7DDDA;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input:checked ~ .span {
+    z-index: 2;
+    background: white;
+    border:1px solid rgba(34, 192, 98, 1);
+}

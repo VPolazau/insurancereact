@@ -1,0 +1,12 @@
+.wrapper{
+    max-width: calc(1218px + 48px);
+    width: 100%;
+    margin: 10px auto;
+}
+.flex {
+    display: flex;
+    margin-left: 24px;
+}
+.navLink {
+    border-bottom: 1px solid #22C062;
+}

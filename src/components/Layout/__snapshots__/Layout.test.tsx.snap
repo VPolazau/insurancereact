@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout for property page with mock component 1`] = `
+<div
+  class="body layoutClass"
+  data-testid="LayoutContent"
+>
+  <div>
+    Some mock component
+  </div>
+</div>
+`;

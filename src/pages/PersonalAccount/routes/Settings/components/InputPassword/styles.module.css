@@ -1,0 +1,65 @@
+.inputWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    align-items: flex-start;
+    align-self: stretch;
+    background: #FCFFFE;
+    position: relative;
+}
+
+.borderWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border-radius: 8px;
+    outline: 1px solid #646464;
+}
+
+input:focus ~ .borderWrapper{
+    outline: 2px solid #22C062;
+}
+
+input:focus ~ .borderWrapperError{
+    outline: 2px solid #ED513B;
+}
+
+.borderWrapperError {
+    outline: 1px solid #ED513B;
+}
+
+.input[type="password"]{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    height: 56px;
+    padding: 6px 4px;
+    align-items: center;
+    color: #1F1D1D;
+    font-family: Nunito Sans, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    z-index: 2;
+}
+
+.eye {
+    margin: 16px 0;
+    height: 24px;
+    width: 24px;
+    fill: #646464;
+    z-index: 2;
+}
+
+.eye:hover {
+    fill: #1F1D1D;
+    cursor: pointer;
+}

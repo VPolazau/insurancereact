@@ -1,0 +1,31 @@
+{
+  "name": "MyInsurance",
+  "short_name": "MYI",
+  "id": "/",
+  "start_url": "/home",
+  "display": "standalone",
+  "lang": "ru-RU",
+  "icons": [
+    {
+      "purpose": "maskable",
+      "size": "512x512",
+      "src": "./assets/img/pwa-img/512.png",
+      "type": "image/png"
+    },
+    {
+      "size": "256x256",
+      "src": "./assets/img/pwa-img/256.png",
+      "type": "image/png"
+    },
+    {
+      "size": "128x128",
+      "src": "./assets/img/pwa-img/128.png",
+      "type": "image/png"
+    },
+    {
+      "size": "64x64",
+      "src": "./assets/img/pwa-img/64.png",
+      "type": "image/png"
+    }
+  ]
+}

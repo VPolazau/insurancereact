@@ -1,0 +1,11 @@
+.cardInsurance {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: visible;
+}
+
+.cardGroup {
+    flex-direction: row;
+}

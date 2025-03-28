@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: calc(346px - 48px);
+}
+
+.image {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.title {
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px
+}
+
+.dismissButton {
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px;
+  width: 145px;
+}
+
+.confirmButton {
+  width: 85px;
+}
+
+.confirmButton:hover > * ,
+.confirmButton:active > * {
+  color: #22C062;
+  cursor: pointer;
+}

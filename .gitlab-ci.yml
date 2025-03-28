@@ -1,0 +1,66 @@
+include:
+  - project: 'rvaliev/devops'
+    ref: main
+    file:
+      - 'templates/build-template.yml'
+      - 'templates/deploy-template.yml'
+
+
+
+stages:
+  - linting
+  - unit-testing
+  - build
+  - deploy
+  - cleanup
+
+variables:
+  PROJECT: my-insurance
+  APP: insurancereact
+
+
+linting:
+  stage: linting
+  image: node:18.16.0-alpine
+  before_script:
+    - npm ci eslint
+    - npm i
+  script:
+    - npm run lint:ts
+
+
+tests:
+    stage: unit-testing
+    image: node:18.16.0-alpine
+    before_script:
+        - npm ci
+    script:
+        - npm run test
+
+
+build:
+  stage: build
+  extends: .kaniko-build-template
+  only:
+    - dev
+    - main
+
+multi-deploy:
+  stage: deploy
+  tags:
+    - shell-$CI_COMMIT_BRANCH
+  extends: .deploy-template
+  only:
+    - dev
+    - reliase
+
+cleanup:
+  stage: cleanup
+  tags:
+    - shell-$CI_COMMIT_BRANCH
+  script:
+    - docker system prune -f --filter "label!=keep"
+  when: always
+  only:
+    - dev
+    - reliase

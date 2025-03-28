@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography Component should match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="text h1 custom-class"
+    data-testid="typographyComponent"
+  >
+    Hello, World!
+  </div>
+</DocumentFragment>
+`;

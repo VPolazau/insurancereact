@@ -1,0 +1,8 @@
+.upIconSvg {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 1em;
+    height: 1em;
+    font-size: 1.5rem;
+    user-select: none;
+}

@@ -1,0 +1,63 @@
+.portal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+    padding: 0;
+    border-radius: 0;
+    background-color: rgba(121, 121, 121, 0.4);
+    animation: bgColor .2s linear;
+}
+
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.modal {
+    position: absolute;
+    background: #FCFFFE;
+    border-radius: 8px;
+    padding: 24px;
+    animation: appearanceModal .2s ease-in-out;
+
+}
+
+.btnClose {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.iconCross {
+    stroke: #ADADAD;
+}
+
+.btnClose:hover .iconCross {
+    stroke: #1F1D1D;
+}
+
+@keyframes appearanceModal {
+    0% {
+        transform: scale(0.9, 0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+@keyframes bgColor {
+    0% {
+        background-color: rgba(121, 121, 121, 0);
+    }
+    100% {
+        background-color: rgba(121, 121, 121, 0.4);
+    }
+}

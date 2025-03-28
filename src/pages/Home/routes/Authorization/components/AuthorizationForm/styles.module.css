@@ -1,0 +1,68 @@
+.authorizationBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #22C062;
+  border-radius: 8px;
+  padding: 48px;
+  width: 594px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  margin: 0 auto;
+}
+
+.blockPrompt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blockCheck {
+  display: flex;
+}
+
+.blockButton {
+  display: flex;
+  justify-content: space-between;
+  gap: 26px;
+}
+
+.btnLogin, .btnRegister {
+  padding: 10px 30px 12px 30px;
+  width: 100%;
+}
+
+.btnLogin {
+  height: 46px;
+  width: 100%;
+}
+
+.eye {
+  position: relative;
+  top: 69px;
+  left: 462px;
+  height: 24px;
+  width: 24px;
+  fill: #646464;
+  z-index: 2;
+}
+
+.eye:hover {
+  fill: #1F1D1D;
+  cursor: pointer;
+}
+
+.blockCheck:hover .hoverText {
+  color: #22C062;
+}
+.hoverText:hover {
+  color: #22C062;
+}
+

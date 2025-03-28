@@ -1,0 +1,36 @@
+.tagWrapper {
+    display: flex;
+}
+
+.tag {
+    display: flex;
+    margin-right: 32px;
+}
+
+.tagNum {
+    display: flex;
+    width: 44px;
+    height: 42px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #646464;
+    margin-right: 16px;
+    color: #646464;
+}
+
+.tagName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #646464;
+}
+
+.activeTag .tagNum  {
+    background-color: #22C062;
+    color: #fff;
+    border-color: #22C062;
+}
+.activeTag .tagName  {
+    color: #1F1D1D;
+}

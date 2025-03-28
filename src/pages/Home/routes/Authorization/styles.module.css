@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 112px 0;
+  /* ширина по макету + 2 падинга */
+  max-width: calc(1218px + 48px);
+  min-height: 100%;
+	flex: 1 0 auto;
+}
+
+
+@media (max-width: 1150px) {
+  .container {
+    min-height: calc(100vh - 227px - 152px);
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    min-height: calc(100vh - 230px - 79px);
+  }
+}
+

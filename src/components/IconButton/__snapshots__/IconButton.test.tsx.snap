@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton component should match snapshot for custom size 1`] = `
+<div>
+  <button
+    class="iconButtonBasic"
+    data-testid="iconButtonComponent"
+  >
+    <img
+      alt="iconButton"
+      src="menu_burger.svg"
+      style="height: 64px;"
+    />
+  </button>
+</div>
+`;
+
+exports[`IconButton component should match snapshot for default size 1`] = `
+<div>
+  <button
+    class="iconButtonBasic"
+    data-testid="iconButtonComponent"
+  >
+    <img
+      alt="iconButton"
+      src="menu_burger.svg"
+      style="height: 46px;"
+    />
+  </button>
+</div>
+`;

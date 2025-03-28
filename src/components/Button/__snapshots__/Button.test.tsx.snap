@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Button-link 1`] = `
+<button
+  class="btn link"
+  data-testid="button"
+>
+  button
+</button>
+`;
+
+exports[`Button Button-primary 1`] = `
+<button
+  class="btn primary"
+  data-testid="button"
+>
+  button
+</button>
+`;
+
+exports[`Button Button-primary-disabled 1`] = `
+<button
+  class="btn primary"
+  data-testid="button"
+  disabled=""
+>
+  button
+</button>
+`;
+
+exports[`Button Button-secondary 1`] = `
+<button
+  class="btn secondary"
+  data-testid="button"
+>
+  button
+</button>
+`;
+
+exports[`Button Button-secondary-disabled 1`] = `
+<button
+  class="btn secondary"
+  data-testid="button"
+  disabled=""
+>
+  button
+</button>
+`;

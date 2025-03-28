@@ -1,0 +1,25 @@
+.portalBasic {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 200px;
+    padding: 20px;
+    gap: 10px;
+
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    background: #FCFFFE;
+
+    border-radius: 6px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 992px) {
+    .portalBasic {
+        flex-direction: column;
+    }
+  }
+  

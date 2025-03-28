@@ -1,0 +1,46 @@
+.navbar {
+  height: 34px;
+  display: flex;
+  margin: 20px auto;
+  padding: 0 24px;
+  /* ширина по макету + 2 падинга */
+  max-width: calc(1218px + 48px);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+}
+
+.buttonSpecial {
+  font-family: Nunito Sans, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #1F1D1D;  
+  font-style: normal;
+  display: flex;
+  align-items: center;
+}
+
+.buttonSpecial::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 13px;
+  background: url(../../../../assets/img/lightning.svg) no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    display: none;
+  }
+}

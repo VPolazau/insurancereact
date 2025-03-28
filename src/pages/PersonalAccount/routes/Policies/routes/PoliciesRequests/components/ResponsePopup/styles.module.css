@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  max-width: calc(529px - 48px);
+}
+
+.title {
+  margin-bottom: 8px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 16px
+}
+
+.requisites {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-top: 16px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.signature {  
+  margin-top: 24px;
+}
+  

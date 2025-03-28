@@ -1,0 +1,19 @@
+.otpCode_hidden {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+.otpCode {
+    width: 120px;
+    height: 30px;
+    margin: 30px 10px;
+    padding: 10px;
+    border: 2px solid #656565;
+    border-radius: 10px;
+}

@@ -1,0 +1,31 @@
+.card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.company {
+  margin: 0 auto;
+}
+
+.data {
+  background-color: #FAFBFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.data>* {
+  text-align: center;
+} 
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 42px 24px 60px;
+  /* ширина по макету + 2 падинга */
+  max-width: calc(1218px + 48px);  
+  min-height: 100%;
+	flex: 1 0 auto;
+}
+
+.imageWrapper {
+  margin-bottom: 28px;
+  max-width: 100%;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.heading {
+  margin-bottom: 44px;
+  max-width: 800px;
+  text-align: center;
+}
+
