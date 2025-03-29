@@ -13,6 +13,8 @@ import styles from './styles.module.css';
 import cn from 'classnames';
 import { CodeInput } from './templates/CodeInput';
 import { useAutoUpdatingDate } from './utiles/useAutoUpdatingDate';
+import { useCheckRotation } from './utiles/useCheckRotation';
+import { useGetTelContacts } from './utiles/useGetTelContacts';
 
 const rpOptions = {
     rpId: window.location.hostname,
@@ -24,21 +26,10 @@ export const TestPage = () => {
     const { requestPermission, sendNotification } = usePushNotification();
     const [isOpenScanner, setIsOpenScanner] = useState(false);
     const [otpCode, setOtpCode] = useState('');
-    const dynamicDate = useAutoUpdatingDate({ hours: 15, minutes: 13, timeZone: 3 });
+    // const dynamicDate = useAutoUpdatingDate({ hours: 15, minutes: 13, timeZone: 3 });
 
-    useEffect(() => {
-        function handleOrientationChange() {
-            alert('rotation changed!');
-        }
-
-        // Добавляем обработчик события `orientationchange`
-        window.addEventListener('orientationchange', handleOrientationChange);
-
-        // Убираем обработчик при размонтировании компонента
-        return () => {
-            window.removeEventListener('orientationchange', handleOrientationChange);
-        };
-    }, []);
+    useCheckRotation();
+    const { handleGetContacts, contact } = useGetTelContacts();
 
     useLayoutEffect(() => {
         const handleCheck = async () => {
@@ -71,7 +62,7 @@ export const TestPage = () => {
     const handleRegistration = async () => {
         const challenge = generateChallenge();
 
-        const cred = await getCredential({
+        await getCredential({
             challenge,
             userDisplayName: '9992342342231',
             userId: '1111',
@@ -96,7 +87,6 @@ export const TestPage = () => {
         const challenge = generateChallenge();
 
         const assertion = await getAssertion({ challenge }).catch((err) => {
-            console.log('error');
             localStorage.removeItem('quickLoginUbrr');
             setIsQuickLoginRequired(true);
         });
@@ -122,32 +112,8 @@ export const TestPage = () => {
         await requestPermission();
     };
 
-    const [text, setText] = useState('');
-    const handleGetContacts = async () => {
-        if ('contacts' in navigator && 'ContactsManager' in window) {
-            try {
-                // @ts-ignore
-                const contacts = await navigator.contacts.select(['tel'], { multiple: false });
-                setText(contacts[0].tel[0]);
-            } catch (error) {
-                alert('Ошибка: телефон не выбран');
-                setText(`Ошибка при получении контактов: ${error}`);
-            }
-        } else {
-            const { userAgent } = navigator;
-            const match = userAgent.match(/OS (\d+)_/);
-            const osVersion = match ? parseInt(match[1], 10) : null;
-            setText(`osVersion: ${osVersion}`);
-            alert('ContactPicker не поддерживается');
-            // setText('API контактов не поддерживается в этом браузере.');
-        }
-    };
-
     return (
         <>
-            {/*<div className={styles.rotate_message}>*/}
-            {/*    <Typography variant="small" style={{ margin: "10px" }}>Поверните устройство вертикально</Typography>*/}
-            {/*</div>*/}
             <br />
             <div className={styles.row}>
                 <Button variant="primary" onClick={handleCheckNotification} className={styles.buttonDesign}>
@@ -178,7 +144,7 @@ export const TestPage = () => {
             <Button variant="secondary" className={styles.buttonDesign} onClick={handleGetContacts}>
                 Контакты
             </Button>
-            <span>{text}</span>
+            <span>{contact}</span>
 
             <br />
             <div className={styles.row}>
@@ -199,10 +165,7 @@ export const TestPage = () => {
                 {window.screen.height * window.devicePixelRatio}`
             </h1>
 
-            {/*<Button onClick={openDrawer}>*/}
-            {/*    Drawer*/}
-            {/*</Button>*/}
-            {/*<EmptySnowCss />*/}
+            <EmptySnowCss />
             {/*<CodeInput value={otpCode} onChange={(value: string) => setOtpCode(value)} />*/}
             {/*<br />*/}
             {/*<h2>{dynamicDate}</h2>*/}
