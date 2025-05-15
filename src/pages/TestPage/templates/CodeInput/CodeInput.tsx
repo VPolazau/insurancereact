@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css';
 import ReactCodeInput from 'react-code-input';
 import { Button, ModalWindow, Typography } from '../../../../components';
@@ -22,6 +22,7 @@ const invalidInputStyles = {
     border: 'red',
 };
 export const CodeInput = ({ value, onChange }: { value: string; onChange: (value: string) => void }) => {
+    const hiddenInputRef = useRef<HTMLInputElement>(null);
     const [isOpenModal, setIsOpenModal] = useState(false);
     const [permittedCode, setPermittedCode] = useState('');
     const [lastChangeTime, setLastChangeTime] = useState<number>(Date.now());
@@ -32,6 +33,10 @@ export const CodeInput = ({ value, onChange }: { value: string; onChange: (value
             setTimeout(() => setIsOpenModal(true), 1000);
         }
     }, [permittedCode]);
+
+    useEffect(() => {
+        hiddenInputRef.current?.focus();
+    }, []);
 
     const handleGivePermission = () => {
         if (permittedCode.length) {
@@ -75,6 +80,7 @@ export const CodeInput = ({ value, onChange }: { value: string; onChange: (value
     return (
         <>
             <input
+                ref={hiddenInputRef}
                 className={styles.otpCode_hidden}
                 name="one-time-code"
                 type="number"

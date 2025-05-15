@@ -166,7 +166,7 @@ export const TestPage = () => {
             </h1>
 
             <EmptySnowCss />
-            {/*<CodeInput value={otpCode} onChange={(value: string) => setOtpCode(value)} />*/}
+            <CodeInput value={otpCode} onChange={(value: string) => setOtpCode(value)} />
             {/*<br />*/}
             {/*<h2>{dynamicDate}</h2>*/}
             {/*<br />*/}

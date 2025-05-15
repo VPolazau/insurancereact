@@ -1,12 +1,11 @@
 .otpCode_hidden {
     position: absolute;
+    top: -1000px;
     opacity: 0;
-    width: 0;
-    height: 0;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    pointer-events: none;
+    height: 1px;
+    width: 1px;
+    pointer-events: auto;
+    z-index: 1;
 }
 
 .otpCode {
